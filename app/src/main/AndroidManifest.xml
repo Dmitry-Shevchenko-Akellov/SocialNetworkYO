@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.socialnetwork">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register.RegisterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Dialog.DialogActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Dialog.dialogWithUser"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Friends.UserProfileActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Profile.SettingsActivity"
+        android:screenOrientation="portrait"
+        tools:ignore="InnerclassSeparator">
+
+    </activity>
+        <activity android:name=".Profile.EditProfileActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+
+        </activity>
+        <activity android:name=".Profile.WallList"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator"/>
+        <activity
+            android:name=".Add.AddActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Add.NextScreenActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Friends.FriendsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Search.SearchActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.ShopsActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.AddShopActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.AddNewProd"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.ProductActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.ProductsList"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Shops.UserShopActivity"
+            tools:ignore="InnerclassSeparator" />
+    </application>
+
+</manifest>
